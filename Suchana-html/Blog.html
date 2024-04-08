@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Blog</title>
+</head>
+<body>
+    <header>
+        <h1>Latest Technology Blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#blog_post">Read Latest Blog Post</a></li>
+        </ul>
+    </nav>
+    <section id="blog_post">
+        <h2>Latest Blog Post</h2>
+        {% for post in blog_posts %}
+        <h3>{{ post.topic }}</h3>
+        <p>{{ post.content }}</p>
+        {% endfor %}
+    </section>
+    <footer>
+        <p>&copy; 2024 Technology Blog</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="" />
+                <span>
+                  સૂचNA
+                </span>
+              </a>
+          </div>
+        </header>
+    
+<!-- Login Form -->
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Here, you can perform your login validation logic
+    // For demonstration purposes, let's simply show a popup message
+    alert('Thank you for logging in!');
+});
+</script>
+</body>
+</html>
